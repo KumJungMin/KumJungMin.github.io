@@ -15,7 +15,7 @@ _둥근모서리 사각형을 만들기에 앞서, quadraticCurveTo에 대해 �
 
 - `quadraticCurveTo`는 2차 곡선을 만들 때 사용하는 함수이다.
 - `조절점`을 기준으로 `끝점`이 (x,y)인 베지어 곡선을 그린다.
-  <img src="https://github.com/KumJungMin/KumJungMin.github.io/blob/main/assets/images/radius/radius-1.png" />
+  <img src="assets/images/radius/radius-1.png" />
 - `quadraticCurveTo`을 사용하면 둥근 사각형을 만들 수 있다.
 
 <br/><br/>
@@ -27,10 +27,10 @@ _둥근모서리 사각형을 만들기에 앞서, quadraticCurveTo에 대해 �
 ### A. 예시 보기
 
 **a.** 먼저, `(x+width-radius, y)`까지 선을 그린다.
-<img src="https://github.com/KumJungMin/KumJungMin.github.io/blob/main/assets/images/radius/radius-2.png" />
+<img src="assets/images/radius/radius-2.png" />
 
 **b.** `(x+width, y)`을 기준으로 끝점이 `(x+width, y+radius)`인 2차 곡선을 생성한다.  
-<img src="https://github.com/KumJungMin/KumJungMin.github.io/blob/main/assets/images/radius/radius-3.png" />
+<img src="assets/images/radius/radius-3.png" />
 
 <br/>
 
@@ -46,13 +46,13 @@ ctx.quadraticCurveTo(x + width, y, x + width, y + radius); //b
 ### B. 필요한 데이터 보기
 
 - 만약 여러분들이 네 모서리가 모두 둥근 사각형을 만들려면 아래와 같은 데이터가 필요하다.
-  <img src="https://github.com/KumJungMin/KumJungMin.github.io/blob/main/assets/images/radius/radius-4.png" />
+  <img src="assets/images/radius/radius-4.png" />
 
 <br/>
 
 - 하얀색 박스부분이 `lineTo`를 사용하여 이동해야할 점이며,
 - `quadraticCurveTo(빨간박스[기준], 보라색박스[끝점])`을 사용해 2차곡선을 그리면 된다.
-  <img src="https://github.com/KumJungMin/KumJungMin.github.io/blob/main/assets/images/radius/radius-5.png" />
+  <img src="assets/images/radius/radius-5.png" />
 
 <br/>
 <br/>
@@ -62,7 +62,7 @@ ctx.quadraticCurveTo(x + width, y, x + width, y + radius); //b
 - 너비 200, 높이 50인 둥근 모서리 사각형을 만들어보자.
 - 필요한 점 데이터들은 아래와 같다.
 
-<img src="https://github.com/KumJungMin/KumJungMin.github.io/blob/main/assets/images/radius/radius-6.jpeg" />
+<img src="assets/images/radius/radius-6.jpeg" />
 
 <br/>
 
