@@ -15,7 +15,7 @@ _둥근모서리 사각형을 만들기에 앞서, quadraticCurveTo에 대해 �
 
 - `quadraticCurveTo`는 2차 곡선을 만들 때 사용하는 함수이다.
 - `조절점`을 기준으로 `끝점`이 (x,y)인 베지어 곡선을 그린다.
-  <img src="assets/images/radius/radius-1.png" />
+  ![](https://images.velog.io/images/gicomong/post/ff22add3-629e-42fb-b9f9-fb3c64bed48f/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-06-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.09.41.png)
 - `quadraticCurveTo`을 사용하면 둥근 사각형을 만들 수 있다.
 
 <br/><br/>
@@ -27,10 +27,10 @@ _둥근모서리 사각형을 만들기에 앞서, quadraticCurveTo에 대해 �
 ### A. 예시 보기
 
 **a.** 먼저, `(x+width-radius, y)`까지 선을 그린다.
-<img src="assets/images/radius/radius-2.png" />
+![](https://images.velog.io/images/gicomong/post/b7a9dd2b-8eff-408f-8965-12f3fa501412/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-06-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.25.40.png)
 
 **b.** `(x+width, y)`을 기준으로 끝점이 `(x+width, y+radius)`인 2차 곡선을 생성한다.  
-<img src="assets/images/radius/radius-3.png" />
+![](https://images.velog.io/images/gicomong/post/9a31df7a-b44f-479d-8629-8307dd7377a2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-06-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.25.47.png)
 
 <br/>
 
@@ -46,13 +46,13 @@ ctx.quadraticCurveTo(x + width, y, x + width, y + radius); //b
 ### B. 필요한 데이터 보기
 
 - 만약 여러분들이 네 모서리가 모두 둥근 사각형을 만들려면 아래와 같은 데이터가 필요하다.
-  <img src="assets/images/radius/radius-4.png" />
+  ![](https://images.velog.io/images/gicomong/post/2e81fa21-a81f-48e1-bfb1-a4c78ff07523/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-06-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.43.04.png)
 
 <br/>
 
 - 하얀색 박스부분이 `lineTo`를 사용하여 이동해야할 점이며,
 - `quadraticCurveTo(빨간박스[기준], 보라색박스[끝점])`을 사용해 2차곡선을 그리면 된다.
-  <img src="assets/images/radius/radius-5.png" />
+  ![](https://images.velog.io/images/gicomong/post/f40248cc-0906-4ccc-a2ad-d6e4e7fc44a4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-06-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.44.18.png)
 
 <br/>
 <br/>
@@ -62,7 +62,7 @@ ctx.quadraticCurveTo(x + width, y, x + width, y + radius); //b
 - 너비 200, 높이 50인 둥근 모서리 사각형을 만들어보자.
 - 필요한 점 데이터들은 아래와 같다.
 
-<img src="assets/images/radius/radius-6.jpeg" />
+![](https://images.velog.io/images/gicomong/post/ba9d505c-727f-43bb-97c8-131a44371f24/1.jpeg)
 
 <br/>
 
